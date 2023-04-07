@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 import org.springframework.context.annotation.Import;
 
 import dev.linkedlogics.service.ServiceProvider;
+import dev.linkedlogics.spring.bean.SpringServiceConfigurer;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

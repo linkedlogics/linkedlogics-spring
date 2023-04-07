@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring;
+package dev.linkedlogics.spring.bean;
 
 import java.util.Arrays;
 import java.util.HashSet;

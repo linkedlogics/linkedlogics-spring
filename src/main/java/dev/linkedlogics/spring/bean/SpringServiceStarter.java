@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring;
+package dev.linkedlogics.spring.bean;
 
 import java.util.List;
 
@@ -7,7 +7,6 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.stereotype.Component;
 
 import dev.linkedlogics.LinkedLogics;
 import dev.linkedlogics.service.ServiceConfigurer;
