@@ -20,4 +20,5 @@ public @interface EnableLinkedLogics {
 	Class<? extends ServiceProvider> scheduling() default ServiceProvider.class;
 	Class<? extends ServiceProvider> evaluating() default ServiceProvider.class;
 	Class<? extends ServiceProvider> monitoring() default ServiceProvider.class;
+	Class<? extends ServiceProvider> tracking() default ServiceProvider.class;
 }

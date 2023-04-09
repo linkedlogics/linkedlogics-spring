@@ -54,6 +54,7 @@ public class SpringServiceConfigurer implements ImportAware {
 		getProvider(annotation.scheduling()).getSchedulingServices().forEach(serviceConfigurer::configure);
 		getProvider(annotation.messaging()).getMessagingServices().forEach(serviceConfigurer::configure);
 		getProvider(annotation.monitoring()).getMonitoringServices().forEach(serviceConfigurer::configure);
+		getProvider(annotation.tracking()).getTrackingServices().forEach(serviceConfigurer::configure);
 		return serviceConfigurer;
 	}
 	
