@@ -22,7 +22,7 @@ public class SpringEvaluatorService implements EvaluatorService {
 	}
 	
 	@Override
-	public Object evaluate(String expression, String id, Map<String, Object> params) {
+	public Object evaluate(String expression, Map<String, Object> params) {
 		StandardEvaluationContext context = new StandardEvaluationContext(params);
 		context.addPropertyAccessor(new MapAccessor());
 	    try {
