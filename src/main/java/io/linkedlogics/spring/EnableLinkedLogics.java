@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring;
+package io.linkedlogics.spring;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,8 +7,8 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.Import;
 
-import dev.linkedlogics.service.ServiceProvider;
-import dev.linkedlogics.spring.bean.SpringServiceConfigurer;
+import io.linkedlogics.service.ServiceProvider;
+import io.linkedlogics.spring.bean.SpringServiceConfigurer;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

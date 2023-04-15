@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring.bean;
+package io.linkedlogics.spring.bean;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ImportAware;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.type.AnnotationMetadata;
 
-import dev.linkedlogics.service.ServiceConfigurer;
-import dev.linkedlogics.service.ServiceProvider;
-import dev.linkedlogics.service.local.LocalServiceConfigurer;
-import dev.linkedlogics.spring.EnableLinkedLogics;
+import io.linkedlogics.service.ServiceConfigurer;
+import io.linkedlogics.service.ServiceProvider;
+import io.linkedlogics.service.local.LocalServiceConfigurer;
+import io.linkedlogics.spring.EnableLinkedLogics;
 
 @Configuration
 public class SpringServiceConfigurer implements ImportAware {

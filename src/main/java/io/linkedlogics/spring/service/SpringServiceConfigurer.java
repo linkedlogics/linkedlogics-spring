@@ -1,6 +1,6 @@
-package dev.linkedlogics.spring.service;
+package io.linkedlogics.spring.service;
 
-import dev.linkedlogics.service.ServiceConfigurer;
+import io.linkedlogics.service.ServiceConfigurer;
 
 public class SpringServiceConfigurer  extends ServiceConfigurer {
 	public SpringServiceConfigurer() {

@@ -1,10 +1,10 @@
-package dev.linkedlogics.spring;
+package io.linkedlogics.spring;
 
 import java.util.List;
 
-import dev.linkedlogics.service.LinkedLogicsService;
-import dev.linkedlogics.service.ServiceProvider;
-import dev.linkedlogics.spring.service.SpringEvaluatorService;
+import io.linkedlogics.service.LinkedLogicsService;
+import io.linkedlogics.service.ServiceProvider;
+import io.linkedlogics.spring.service.SpringEvaluatorService;
 
 public class SpringServices extends ServiceProvider {
 

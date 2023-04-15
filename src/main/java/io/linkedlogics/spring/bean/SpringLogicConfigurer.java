@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring.bean;
+package io.linkedlogics.spring.bean;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,8 +7,8 @@ import java.util.Set;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
-import dev.linkedlogics.LinkedLogics;
-import dev.linkedlogics.annotation.Logic;
+import io.linkedlogics.LinkedLogics;
+import io.linkedlogics.annotation.Logic;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

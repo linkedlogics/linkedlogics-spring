@@ -1,4 +1,4 @@
-package dev.linkedlogics.spring.service;
+package io.linkedlogics.spring.service;
 
 import java.util.Map;
 
@@ -9,8 +9,8 @@ import org.springframework.expression.ParseException;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
-import dev.linkedlogics.model.process.ExpressionLogicDefinition;
-import dev.linkedlogics.service.EvaluatorService;
+import io.linkedlogics.model.process.ExpressionLogicDefinition;
+import io.linkedlogics.service.EvaluatorService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
