@@ -24,7 +24,7 @@ public class SpringServiceStarter implements ApplicationRunner {
 	private final List<ServiceConfigurer> configurers;
 	
 	public void addLogicBean(String bean) {
-		beansContainingProcess.add(bean);
+		beansContainingLogic.add(bean);
 	}
 	
 	public void addProcessBean(String bean) {

@@ -14,11 +14,5 @@ import io.linkedlogics.spring.bean.SpringServiceConfigurer;
 @Retention(RetentionPolicy.RUNTIME)
 @Import(SpringServiceConfigurer.class)
 public @interface EnableLinkedLogics {
-	Class<? extends ServiceProvider> storing() default ServiceProvider.class;
-	Class<? extends ServiceProvider> messaging() default ServiceProvider.class;
-	Class<? extends ServiceProvider> processing() default ServiceProvider.class;
-	Class<? extends ServiceProvider> scheduling() default ServiceProvider.class;
-	Class<? extends ServiceProvider> evaluating() default ServiceProvider.class;
-	Class<? extends ServiceProvider> monitoring() default ServiceProvider.class;
-	Class<? extends ServiceProvider> tracking() default ServiceProvider.class;
+	SpringProfile[] value() default {};
 }

@@ -6,6 +6,7 @@ import io.linkedlogics.service.LinkedLogicsService;
 import io.linkedlogics.service.ServiceProvider;
 import io.linkedlogics.spring.service.SpringEvaluatorService;
 
+@EnableLinkedLogics(@SpringProfile(profile = "production"))
 public class SpringServices extends ServiceProvider {
 
 	@Override
