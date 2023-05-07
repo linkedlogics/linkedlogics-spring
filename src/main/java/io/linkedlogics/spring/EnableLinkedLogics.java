@@ -7,7 +7,6 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.Import;
 
-import io.linkedlogics.service.ServiceProvider;
 import io.linkedlogics.spring.bean.SpringServiceConfigurer;
 
 @Target(ElementType.TYPE)

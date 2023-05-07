@@ -9,7 +9,6 @@ import org.springframework.expression.ParseException;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
-import io.linkedlogics.model.process.ExpressionLogicDefinition;
 import io.linkedlogics.service.EvaluatorService;
 import lombok.extern.slf4j.Slf4j;
 
