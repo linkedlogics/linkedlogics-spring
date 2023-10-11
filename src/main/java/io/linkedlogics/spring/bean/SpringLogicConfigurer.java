@@ -17,6 +17,7 @@ public class SpringLogicConfigurer implements BeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		Arrays.stream(bean.getClass().getMethods()).filter(m -> m.getAnnotation(Logic.class) != null).findAny().ifPresent(m -> starter.addLogicBean(beanName));
+		Arrays.stream(bean.getClass().getDeclaredMethods()).filter(m -> m.getAnnotation(Logic.class) != null).findAny().ifPresent(m -> starter.addLogicBean(beanName));
 		return bean;
 	}
 

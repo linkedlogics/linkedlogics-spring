@@ -17,7 +17,7 @@ public class SpringProcessConfigurer implements BeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		Arrays.stream(bean.getClass().getMethods()).filter(m -> ProcessDefinition.class.isAssignableFrom(m.getReturnType())).findAny().ifPresent(m -> starter.addProcessBean(beanName));
-		
+		Arrays.stream(bean.getClass().getDeclaredMethods()).filter(m -> ProcessDefinition.class.isAssignableFrom(m.getReturnType())).findAny().ifPresent(m -> starter.addProcessBean(beanName));
 		return bean;
 	}
 
